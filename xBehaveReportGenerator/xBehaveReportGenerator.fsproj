@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>xBehaveReportGenerator</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+        <Title>xBehave Report Generator</Title>
+        <Authors>Urs Enzler</Authors>
+        <Copyright>2020 Urs Enzler</Copyright>
+        <PackageTags>xBehave markdown</PackageTags>
+        <PackageProjectUrl>https://github.com/ursenzler/xBehaveReportGenerator</PackageProjectUrl>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/ursenzler/xBehaveReportGenerator</RepositoryUrl>
+        <PackageReleaseNotes>
+            V 1.0.0:
+                support for markdown
+        </PackageReleaseNotes>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="TypeProviders.fs" />
+        <Compile Include="Types.fs" />
+        <Compile Include="Parsing.fs" />
+        <Compile Include="Structure.fs" />
+        <Compile Include="Formatting.fs" />
+        <Compile Include="Library.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Argu" Version="6.0.0" />
+      <PackageReference Include="FSharp.Data" Version="3.3.2" />
+    </ItemGroup>
+
+</Project>
