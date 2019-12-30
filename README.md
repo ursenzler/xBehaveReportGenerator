@@ -86,4 +86,4 @@ this markdown report:
 
 The namespaces and scenarios are sorted alphabetically.
 
-There is no indication whether the test run successfully or failed. I assue that the tests should always run succesfully ;-)
+There is no indication whether the tests ran successfully or failed. I assume that the tests should always run successfully ;-)
