@@ -13,6 +13,7 @@
         <PackageProjectUrl>https://github.com/ursenzler/xBehaveReportGenerator</PackageProjectUrl>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
         <RepositoryUrl>https://github.com/ursenzler/xBehaveReportGenerator</RepositoryUrl>
+        <Description>Creates a (markdown) report from a trx file of a test run of xBehave specifications.</Description>
         <PackageReleaseNotes>
             V 1.0.0:
                 support for markdown
