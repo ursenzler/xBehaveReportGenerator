@@ -27,7 +27,7 @@ Run the report generator with:
 
 ## Sample
 
-The xBehave report generator will generate from this:
+The xBehave report generator will generate from this scenarios:
 
 ```c#
 namespace Sample
@@ -65,3 +65,25 @@ namespace Sample
     }
 }
 ```
+
+this markdown report:
+
+#   Sample
+## SimpleSample
+### AnotherSimpleScenario
+01. (Background) some background
+02. another value exists
+03. when the other value is changed
+04. the other value should be changed
+05. the other value should really be changed
+
+### SimpleScenario
+01. (Background) some background
+02. a value exists
+03. when the value is changed
+04. the value should be changed
+
+
+The namespaces and scenarios are sorted alphabetically.
+
+There is no indication whether the test run successfully or failed. I assue that the tests should always run succesfully ;-)
