@@ -31,6 +31,12 @@
         <e p="Types.fs" t="Include" />
         <e p="xBehaveReportGenerator.fsproj" t="IncludeRecursive" />
       </e>
+      <e p="xBehaveReportGenerator.Facts" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Tests.fs" t="Include" />
+        <e p="xBehaveReportGenerator.Facts.fsproj" t="IncludeRecursive" />
+      </e>
       <e p="xBehaveReportGenerator.sln" t="IncludeFlat" />
     </e>
     <e p="C:\Users\ursen\.nuget\packages\microsoft.net.test.sdk\16.4.0\build\netcoreapp2.1" t="Include">
