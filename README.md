@@ -1,3 +1,6 @@
+_[![nuget](https://img.shields.io/nuget/v/xBehaveReportGenerator.svg?style=flat&label=version) ![version](https://img.shields.io/nuget/dt/xBehaveReportGenerator.svg?style=flat&label=downloads)](https://www.nuget.org/packages/xBehaveReportGenerator)_
+![issues](https://img.shields.io/github/issues/ursenzler/xBehaveReportGenerator.svg?style=flat)
+
 # xBehaveReportGenerator
 Creates a (markdown) report from xBehave specs.
 
