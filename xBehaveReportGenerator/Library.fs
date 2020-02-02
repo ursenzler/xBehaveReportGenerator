@@ -30,7 +30,7 @@ let main argv =
         | None -> ""
 
     printfn "reading trace file %s" input
-    let data = xBehaveReportGenerator.TypeProviders.Data.Load(input)
+    let data = xBehaveReportGenerator.Types.Data.Load(input)
 
     printfn "parsing test data"
     let infos = parseData data

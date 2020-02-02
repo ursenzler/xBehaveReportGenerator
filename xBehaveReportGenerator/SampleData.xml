@@ -1,8 +1,4 @@
-module xBehaveReportGenerator.TypeProviders
-
-open FSharp.Data
-
-type Data = XmlProvider<"""<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TestRun id="3e4a7e5a-6ff0-4159-8501-01bc2d193c9d" name="blah 2019-12-29 12:09:42" runUser="blah" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Times creation="2019-12-29T12:09:42.9702545+01:00" queuing="2019-12-29T12:09:42.9702568+01:00" start="2019-12-29T12:09:42.0174229+01:00" finish="2019-12-29T12:09:43.0083045+01:00" />
   <TestSettings name="default" id="bf6b8627-311b-4b87-8de4-3dcbab75da18">
@@ -41,6 +37,4 @@ type Data = XmlProvider<"""<?xml version="1.0" encoding="utf-8"?>
 </StdOut>
     </Output>
   </ResultSummary>
-</TestRun>""">
-
-
+</TestRun>
