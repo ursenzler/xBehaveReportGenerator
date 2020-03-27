@@ -30,7 +30,7 @@ let main argv =
         | None -> ""
 
     printfn "reading trace file %s" input
-    let data = xBehaveReportGenerator.TypeProviders.Data.Load(input)
+    let data = xBehaveReportGenerator.Types.Data.Load(input)
 
     printfn "parsing test data"
     let infos = parseData data
@@ -39,10 +39,10 @@ let main argv =
     let tree = structurize title infos
 
     printfn "compacting structure"
-    let compactedTree = compact tree ""
+    let compactedTree = compact tree
 
     printfn "creating report"
-    let report = format 1 compactedTree
+    let report = format compactedTree
 
     printfn "writing report to %s" output
     File.WriteAllLines(output, report)

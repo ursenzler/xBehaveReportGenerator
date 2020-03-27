@@ -143,12 +143,13 @@ let Report = """
 
 [<Fact>]
 let ``My test`` () =
-    let data = xBehaveReportGenerator.TypeProviders.Data.Parse(Trx)
-    let infos = parseData data
-    let tree = structurize title infos
-    let compactedTree = compact tree ""
-    let report = format 1 compactedTree
-    let text = report |> Seq.fold (fun a v -> a + "\r\n" + v) ""
+    let text =
+      xBehaveReportGenerator.Types.Data.Parse Trx
+      |> parseData
+      |> structurize title
+      |> compact
+      |> format
+      |> Seq.fold (fun a v -> a + "\r\n" + v) ""
 
     text |> should equal Report
 
